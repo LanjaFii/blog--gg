@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" version="6.0">
+  <display-name>Blog--GG</display-name>
+  <context-param>
+    <param-name>JDBC_DRIVER</param-name>
+    <param-value>com.mysql.cj.jdbc.Driver</param-value>
+  </context-param>
+  <context-param>
+    <param-name>JDBC_URL</param-name>
+    <param-value>jdbc:mysql://localhost:3306/blog_gg</param-value>
+  </context-param>
+  <context-param>
+    <param-name>JDBC_LOGIN</param-name>
+    <param-value>lanja</param-value>
+  </context-param>
+  <context-param>
+    <param-name>JDBC_PASSWORD</param-name>
+    <param-value>fritekechup</param-value>
+  </context-param>
+  <session-config>
+    <session-timeout>60</session-timeout>
+  </session-config>
+  <welcome-file-list>
+    <welcome-file>loginServlet</welcome-file>
+  </welcome-file-list>
+</web-app>

@@ -1,0 +1,140 @@
+@charset "UTF-8";
+#mpameno{
+    margin-bottom: 60px;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    
+    padding: 10px;
+    padding-bottom: 40px;
+    overflow-y: auto;
+    margin-left: 210px; /* Adjust to fit the sidebar */
+    margin-top: 0px; /* Adjust to fit the header */
+}
+
+.blog-card {
+    background: linear-gradient(145deg, #ffffff, #d1d9e6);
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-info h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.user-info span {
+    font-size: 14px;
+    color: #666;
+}
+
+.blog-content {
+    margin-bottom: 20px;
+}
+
+.blog-title {
+    font-size: 24px;
+    color: rgb(32, 74, 135);
+    margin: 0 0 10px 0;
+    font-family: fantasy;
+}
+
+.blog-content p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    margin: 0;
+    text-align: justify;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    position: relative;
+    top: 20px;
+}
+
+.like-button, .participate-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    background: #0099ff;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 5px 10px rgba(0, 153, 255, 0.3);
+    transform: translateY(10px);
+}
+
+.like-button {
+    background: rgba(0, 0, 0, 0.452);
+}
+
+.participate-button {
+    background: #218838;
+}
+
+.like-button:hover, .participate-button:hover {
+    transform: translateY(0);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.like-button.liked {
+    background: #007BFF;
+}
+
+.buttons button {
+    position: absolute;
+    bottom: -20px;
+    right: -10px;
+}
+
+.buttons .participate-button {
+    right: 0px;
+}
+
+.buttons .like-button {
+    right: 90px;
+}
+
+.date{
+	color: #007BFF;
+}
+
+#lera{
+	color: rgb(114, 159, 207);
+	font-family: monospace; 
+}
+
+#anarana{
+	font-family: fantasy;
+}
+
+#contenu{
+	background: rgba(0, 0, 0, 0.02); 
+	border-radius: 5px;
+	font-weight: bold;
+}
